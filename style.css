@@ -10,11 +10,25 @@ body {
     padding: 0;
 }
 
+a {
+    transition: transform 0.5s ease;
+}
+a:hover {
+    transform: scale(1.1);
+}
+
+img {
+    transition: transform 0.5s ease;
+}
+img:hover {
+    transform: scale(1.1);
+}
+
 nav {
     width: 100%;
     background-color: #fff;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
-    border: 1px solid ;
+    border: 2px solid ;
     border-radius: 10px;
 }
 
@@ -40,7 +54,7 @@ nav ul li a {
     padding: 10px 15px;
     display: block;
     border: 1px solid #000;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.5s ease;
     border-radius: 10px;
 }
 
@@ -95,7 +109,6 @@ nav ul li a:hover {
 
 .scritta-evidenza {
     text-align: center;
-    padding-top: 75px;
 }
 .evidenza {
     display: grid;
@@ -172,7 +185,53 @@ nav ul li a:hover {
 }
 
 .circolari {
-    padding-top: 150px;
+    padding-top: 75px;
+    text-align: center;
+    a:link {
+        color: black;
+        background-color: transparent;
+        text-decoration: none;
+    }
+    a:visited {
+        color: darkblue;
+        background-color: transparent;
+        text-decoration: none;
+    }  
+    a:hover {
+        color: blue;
+        background-color: transparent;
+        text-decoration: none;
+        transform: scale(1.1);
+    }
+}
+.circolari a {
+    transition: transform 0.5s ease;
+}
+.circolari p {
+    font-size: 150%;
+}
+.circolari img {
+    margin: 25px 10px 25px 10px ;
+    border: 2px solid black;
+    border-radius: 10px;
+    gap: 10px;
+    box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.5);
+    transition: transform 0.5s ease;
+}
+.circolari img:hover {
+    transform: scale(1.1);
+}
+.scopri-circolari a {
+    display: block;
+    padding: 0px 50px 0px 50px;
+    border: 2px solid black;
+    border-radius: 10px;
+    justify-self: center;
+    box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.5);
+}
+
+.didattica {
+    padding-top: 75px;
     text-align: center;
     a:link {
         color: black;
@@ -190,21 +249,22 @@ nav ul li a:hover {
         text-decoration: none;
     }
 }
-.circolari p {
+.didattica p {
     font-size: 150%;
 }
-.circolari img {
-    margin: 25px 10px 25px 10px ;
-    border: 2px solid black;
-    border-radius: 10px;
-    gap: 10px;
-    box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.5);
+.box-didattica {
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    grid-gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
 }
-.scopri-circolari {
-    font-size: 75%;
-    padding: 0px 50px 0px 50px;
+.didattica a {
+    display: block;
+    margin-top: 20px;
     border: 2px solid black;
     border-radius: 10px;
-    justify-self: center;
     box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.5);
+    width: 200px;
+    margin-bottom: 150px;
 }
