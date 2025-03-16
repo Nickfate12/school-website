@@ -80,7 +80,7 @@ nav ul li a:hover {
 }
 
 .immagini-indirizzi {
-    display: flex;;
+    display: flex;
     justify-content: center;
     padding-top: 100px;
     gap: 150px;
